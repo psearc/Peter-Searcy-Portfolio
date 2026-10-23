@@ -2,7 +2,7 @@
 
 Personal portfolio site. AI automations & marketing.
 
-**Live:** https://<your-username>.github.io/peter-searcy-portfolio/
+**Live:** https://psearc.github.io/Peter-Searcy-Portfolio/
 
 ## Deploy on GitHub Pages (free)
 
@@ -36,6 +36,12 @@ Then tick **Enforce HTTPS**.
 
 `index.html` is compiled output — don't hand-edit it. Ask for changes to the source
 and re-export.
+
+**After every re-export, run `python3 add-meta.py index.html`.** The exporter titles the
+page "Bundled Page" and writes no share tags, so LinkedIn can't preview the link. The
+script adds the title, description, Open Graph and Twitter tags (pointing at
+`og-image.png`, 1200x627) to both the outer page and the bundled template. Running it
+twice is safe.
 
 ## Contact
 
